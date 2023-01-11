@@ -28,57 +28,116 @@ class MainTest {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        assertEquals("Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 91 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 98 hp\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 82 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 96 hp\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 73 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 94 hp\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 64 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 92 hp\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 55 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 90 hp\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 46 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 88 hp\r\n" +
-                "Ааа, я супермен!\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 37 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 86 hp\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 28 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 84 hp\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 19 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 82 hp\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 10 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 80 hp\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 1 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 78 hp\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: -8 hp\r\n" +
-                "Умер вражеский персонаж\r\n" +
-                "Выходит 2 персонаж врага\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 91 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 76 hp\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 82 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 74 hp\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 73 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 72 hp\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 64 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 70 hp\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 55 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 68 hp\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 46 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 66 hp\r\n" +
-                "Ааа, я супермен!\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 37 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 64 hp\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 28 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 62 hp\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 19 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 60 hp\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 10 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 58 hp\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: 1 hp\r\n" +
-                "Ваш персонаж: Росомаха получил урон: 2 у вашего персонажа осталось: 56 hp\r\n" +
-                "Ваш персонаж: Росомаха на нес урон вражескому персонажу на: 9 у врага осталось: -8 hp\r\n" +
-                "Умер вражеский персонаж\r\n" +
-                "Вы выиграли\r\n", consoleOutput);
+        assertEquals(true, consoleOutput.contains("Вы выиграли"));
+    }
+
+    @Test
+    void fight2() {
+        String consoleOutput = null;
+        PrintStream originalOut = System.out;
+        try {
+            ByteArrayOutputStream outputStream = new ByteArrayOutputStream(100);
+            PrintStream capture = new PrintStream(outputStream);
+            System.setOut(capture);
+            Superhero one = Factory.createAquaman();
+            Superhero two = Factory.createWolverine();
+            Superhero superhero = Factory.createSuperman();
+            Superhero superhero2 = Factory.createHulk();
+            Main.fight(one, two, superhero, superhero2);
+            capture.flush();
+            consoleOutput = outputStream.toString();
+            System.setOut(originalOut);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        assertEquals(true, consoleOutput.contains("Вы выиграли"));
+    }
+
+    @Test
+    void fight3() {
+        String consoleOutput = null;
+        PrintStream originalOut = System.out;
+        try {
+            ByteArrayOutputStream outputStream = new ByteArrayOutputStream(100);
+            PrintStream capture = new PrintStream(outputStream);
+            System.setOut(capture);
+            Superhero one = Factory.createHulk();
+            Superhero two = Factory.createSuperman();
+            Superhero superhero = Factory.createSuperman();
+            Superhero superhero2 = Factory.createWolverine();
+            Main.fight(one, two, superhero, superhero2);
+            capture.flush();
+            consoleOutput = outputStream.toString();
+            System.setOut(originalOut);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        assertEquals(false, consoleOutput.contains("Вы выиграли"));
+    }
+
+    @Test
+    void fight4() {
+        String consoleOutput = null;
+        PrintStream originalOut = System.out;
+        try {
+            ByteArrayOutputStream outputStream = new ByteArrayOutputStream(100);
+            PrintStream capture = new PrintStream(outputStream);
+            System.setOut(capture);
+            Superhero one = Factory.createSuperman();
+            Superhero two = Factory.createSuperman();
+            Superhero superhero = Factory.createWolverine();
+            Superhero superhero2 = Factory.createWolverine();
+            Main.fight(one, two, superhero, superhero2);
+            capture.flush();
+            consoleOutput = outputStream.toString();
+            System.setOut(originalOut);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        assertEquals(false, consoleOutput.contains("Вы выиграли"));
+    }
+
+    @Test
+    void fight5() {
+        String consoleOutput = null;
+        PrintStream originalOut = System.out;
+        try {
+            ByteArrayOutputStream outputStream = new ByteArrayOutputStream(100);
+            PrintStream capture = new PrintStream(outputStream);
+            System.setOut(capture);
+            Superhero one = Factory.createSuperman();
+            Superhero two = Factory.createWolverine();
+            Superhero superhero = Factory.createHulk();
+            Superhero superhero2 = Factory.createSuperman();
+            Main.fight(one, two, superhero, superhero2);
+            capture.flush();
+            consoleOutput = outputStream.toString();
+            System.setOut(originalOut);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        assertEquals(true, consoleOutput.contains("Вы выиграли"));
+    }
+
+    @Test
+    void fight6() {
+        String consoleOutput = null;
+        PrintStream originalOut = System.out;
+        try {
+            ByteArrayOutputStream outputStream = new ByteArrayOutputStream(100);
+            PrintStream capture = new PrintStream(outputStream);
+            System.setOut(capture);
+            Superhero one = Factory.createSuperman();
+            Superhero two = Factory.createHulk();
+            Superhero superhero = Factory.createAquaman();
+            Superhero superhero2 = Factory.createWolverine();
+            Main.fight(one, two, superhero, superhero2);
+            capture.flush();
+            consoleOutput = outputStream.toString();
+            System.setOut(originalOut);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        assertEquals(false, consoleOutput.contains("Вы выиграли"));
     }
 }

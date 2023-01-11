@@ -8,14 +8,30 @@ public class Superhero {
     private String superPower;
 
     public Superhero(String name, int strengthLevel, String label, String superPower) {
-        this.name = name;
-        this.strengthLevel = strengthLevel;
-        this.label = label;
-        this.superPower = superPower;
+        if (name != null && !name.isEmpty() && strengthLevel != 0 && label != null && !label.isEmpty() && superPower != null && !superPower.isEmpty()) {
+            this.name = name;
+            this.strengthLevel = strengthLevel;
+            this.label = label;
+            this.superPower = superPower;
+        } else {
+            try {
+                throw new ExceptionSuperhero("Значения должны быть заполнены");
+            } catch (ExceptionSuperhero e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
 
     public void setSuperPower(String superPower) {
-        this.superPower = superPower;
+        if (!superPower.isEmpty() && superPower != null) {
+            this.superPower = superPower;
+        } else {
+            try {
+                throw new ExceptionSuperhero("Значения должны быть заполнены");
+            } catch (ExceptionSuperhero e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
 
     public String getName() {
@@ -23,7 +39,15 @@ public class Superhero {
     }
 
     public void setName(String name) {
-        this.name = name;
+        if (name != null && !name.isEmpty()) {
+            this.name = name;
+        } else {
+            try {
+                throw new ExceptionSuperhero("Значения должны быть заполнены");
+            } catch (ExceptionSuperhero e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
 
     public int getStrengthLevel() {
@@ -31,7 +55,15 @@ public class Superhero {
     }
 
     public void setStrengthLevel(int strengthLevel) {
-        this.strengthLevel = strengthLevel;
+        if (strengthLevel != 0) {
+            this.strengthLevel = strengthLevel;
+        } else {
+            try {
+                throw new ExceptionSuperhero("Значения должны быть заполнены");
+            } catch (ExceptionSuperhero e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
 
     public String getLabel() {
@@ -39,7 +71,15 @@ public class Superhero {
     }
 
     public void setLabel(String label) {
-        this.label = label;
+        if (label != null && !label.isEmpty()) {
+            this.label = label;
+        } else {
+            try {
+                throw new ExceptionSuperhero("Значения должны быть заполнены");
+            } catch (ExceptionSuperhero e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
 
     public int getHp() {

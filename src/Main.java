@@ -3,69 +3,62 @@ public class Main {
         //1
         Superhero one = Factory.createWolverine();
         Superhero two = Factory.createWolverine();
-
         Superhero superhero = Factory.createSuperman();
         Superhero superhero2 = Factory.createSuperman();
         //2
-//        Superhero superhero = Factory.createAquaman();
-//        Superhero superhero2 = Factory.createWolverine();
-        //3
-//        Superhero superhero = Factory.createHulk();
-//        Superhero superhero2 = Factory.createSuperman();
-        //4
-//        Superhero superhero = Factory.createSuperman();
-//        Superhero superhero2 = Factory.createSuperman();
-
-        //5
-//        Superhero superhero = Factory.createSuperman();
-//        Superhero superhero2 = Factory.createWolverine();
-        //6
+//        Superhero one = Factory.createAquaman();
+//        Superhero two = Factory.createWolverine();
 //        Superhero superhero = Factory.createSuperman();
 //        Superhero superhero2 = Factory.createHulk();
 
-        fight(one, two,superhero,superhero2);
-    }
-
-    public static void fight(Superhero one, Superhero two,Superhero superhero,Superhero superhero2) {
-        int countHero = 0;
-        int countEnemyHero = 0;
-        //1
-//        Superhero superhero = Factory.createSuperman();
-//        Superhero superhero2 = Factory.createSuperman();
-        //2
-//        Superhero superhero = Factory.createSuperman();
-//        Superhero superhero2 = Factory.createHulk();
         //3
+//        Superhero one = Factory.createHulk();
+//        Superhero two = Factory.createSuperman();
 //        Superhero superhero = Factory.createSuperman();
 //        Superhero superhero2 = Factory.createWolverine();
         //4
+//        Superhero one = Factory.createSuperman();
+//        Superhero two = Factory.createSuperman();
 //        Superhero superhero = Factory.createWolverine();
 //        Superhero superhero2 = Factory.createWolverine();
+
         //5
+//        Superhero one = Factory.createSuperman();
+//        Superhero two = Factory.createWolverine();
 //        Superhero superhero = Factory.createHulk();
 //        Superhero superhero2 = Factory.createSuperman();
         //6
+//        Superhero one = Factory.createSuperman();
+//        Superhero two = Factory.createHulk();
 //        Superhero superhero = Factory.createAquaman();
 //        Superhero superhero2 = Factory.createWolverine();
+
+//        fight(one, two,superhero,superhero2);
+    }
+
+    public static void fight(Superhero one, Superhero two, Superhero superhero, Superhero superhero2) {
+        int countHero = 0;
+        int countEnemyHero = 0;
         while (true) {
+            int numberRandom = (int) (Math.random() * 2);
             if (one.getHp() > 0 && superhero.getHp() > 0) {
                 //Ќаш персонаж наносит урон
-                if (one.getHp() > 0) {
+                if (one.getHp() > 0 && numberRandom == 0) {
                     int hpOne = superhero.getHp() - one.getStrengthLevel();
                     superhero.setHp(hpOne);
                     System.out.println("¬аш персонаж: " + one.getName() + " на нес урон вражескому персонажу на: " + one.getStrengthLevel() + " у врага осталось: " + superhero.getHp() + " hp");
                 }
                 //¬ражеский персонаж наносит урон
-                if (superhero.getHp() > 0) {
+                if (superhero.getHp() > 0 && numberRandom == 1) {
                     int hpTwo = one.getHp() - superhero.getStrengthLevel();
                     one.setHp(hpTwo);
                     System.out.println("¬аш персонаж: " + one.getName() + " получил урон: " + superhero.getStrengthLevel() + " у вашего персонажа осталось: " + one.getHp() + " hp");
                 }
-                if(one.getHp() <= 50 && countHero == 0){
+                if (one.getHp() <= 50 && countHero == 0) {
                     one.superPower();
                     countHero++;
                 }
-                if(superhero.getHp() <= 50 && countEnemyHero == 0){
+                if (superhero.getHp() <= 50 && countEnemyHero == 0) {
                     superhero.superPower();
                     countEnemyHero++;
                 }
@@ -77,26 +70,26 @@ public class Main {
                 if (superhero.getHp() <= 0) {
                     System.out.println("”мер вражеский персонаж");
                     System.out.println("¬ыходит 2 персонаж врага");
-                    countEnemyHero=0;
+                    countEnemyHero = 0;
                 }
             } else if (one.getHp() > 0 && superhero.getHp() <= 0 && superhero2.getHp() > 0) {
                 //Ќаш персонаж наносит урон
-                if (one.getHp() > 0) {
+                if (one.getHp() > 0 && numberRandom == 0) {
                     int hpOne = superhero2.getHp() - one.getStrengthLevel();
                     superhero2.setHp(hpOne);
                     System.out.println("¬аш персонаж: " + one.getName() + " на нес урон вражескому персонажу на: " + one.getStrengthLevel() + " у врага осталось: " + superhero2.getHp() + " hp");
                 }
                 //¬ражеский персонаж наносит урон
-                if (superhero2.getHp() > 0) {
+                if (superhero2.getHp() > 0 && numberRandom == 1) {
                     int hpTwo = one.getHp() - superhero2.getStrengthLevel();
                     one.setHp(hpTwo);
                     System.out.println("¬аш персонаж: " + one.getName() + " получил урон: " + superhero2.getStrengthLevel() + " у вашего персонажа осталось: " + one.getHp() + " hp");
                 }
-                if(one.getHp() <= 50 && countHero == 0){
+                if (one.getHp() <= 50 && countHero == 0) {
                     one.superPower();
                     countHero++;
                 }
-                if(superhero2.getHp() <= 50 && countEnemyHero == 0){
+                if (superhero2.getHp() <= 50 && countEnemyHero == 0) {
                     superhero2.superPower();
                     countEnemyHero++;
                 }
@@ -111,22 +104,22 @@ public class Main {
                 }
             } else if (one.getHp() <= 0 && superhero.getHp() > 0 && two.getHp() > 0) {
                 //Ќаш персонаж наносит урон
-                if (two.getHp() > 0) {
+                if (two.getHp() > 0 && numberRandom == 0) {
                     int hpOne = superhero.getHp() - two.getStrengthLevel();
                     superhero.setHp(hpOne);
                     System.out.println("¬аш персонаж: " + two.getName() + " на нес урон вражескому персонажу на: " + two.getStrengthLevel() + " у врага осталось: " + superhero.getHp() + " hp");
                 }
                 //¬ражеский персонаж наносит урон
-                if (superhero.getHp() > 0) {
+                if (superhero.getHp() > 0 && numberRandom == 1) {
                     int hpTwo = two.getHp() - superhero.getStrengthLevel();
                     two.setHp(hpTwo);
                     System.out.println("¬аш персонаж: " + two.getName() + " получил урон: " + superhero.getStrengthLevel() + " у вашего персонажа осталось: " + two.getHp() + " hp");
                 }
-                if(two.getHp() <= 50 && countHero == 0){
+                if (two.getHp() <= 50 && countHero == 0) {
                     two.superPower();
                     countHero++;
                 }
-                if(superhero.getHp() <= 50 && countEnemyHero == 0){
+                if (superhero.getHp() <= 50 && countEnemyHero == 0) {
                     superhero.superPower();
                     countEnemyHero++;
                 }
@@ -140,22 +133,22 @@ public class Main {
                 }
             } else if (one.getHp() <= 0 && superhero.getHp() <= 0 && superhero2.getHp() > 0 && two.getHp() > 0) {
                 //Ќаш персонаж наносит урон
-                if (two.getHp() > 0) {
+                if (two.getHp() > 0 && numberRandom == 0) {
                     int hpOne = superhero2.getHp() - two.getStrengthLevel();
                     superhero2.setHp(hpOne);
                     System.out.println("¬аш персонаж: " + two.getName() + " на нес урон вражескому персонажу на: " + two.getStrengthLevel() + " у врага осталось: " + superhero2.getHp() + " hp");
                 }
                 //¬ражеский персонаж наносит урон
-                if (superhero2.getHp() > 0) {
+                if (superhero2.getHp() > 0 && numberRandom == 1) {
                     int hpTwo = two.getHp() - superhero2.getStrengthLevel();
                     two.setHp(hpTwo);
                     System.out.println("¬аш персонаж: " + two.getName() + " получил урон: " + superhero2.getStrengthLevel() + " у вашего персонажа осталось: " + two.getHp() + " hp");
                 }
-                if(two.getHp() <= 50 && countHero == 0){
+                if (two.getHp() <= 50 && countHero == 0) {
                     two.superPower();
                     countHero++;
                 }
-                if(superhero2.getHp() <= 50 && countEnemyHero == 0){
+                if (superhero2.getHp() <= 50 && countEnemyHero == 0) {
                     superhero2.superPower();
                     countEnemyHero++;
                 }
