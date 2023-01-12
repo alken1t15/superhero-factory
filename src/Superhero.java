@@ -1,18 +1,21 @@
+import java.util.Objects;
+
 public class Superhero {
     private String name;
     private int strengthLevel;
     private String label;
-
     private int hp = 100;
-
     private String superPower;
 
-    public Superhero(String name, int strengthLevel, String label, String superPower) {
+    private long price;
+
+    public Superhero(String name, int strengthLevel, String label, String superPower,long price) {
         if (name != null && !name.isEmpty() && strengthLevel != 0 && label != null && !label.isEmpty() && superPower != null && !superPower.isEmpty()) {
             this.name = name;
             this.strengthLevel = strengthLevel;
             this.label = label;
             this.superPower = superPower;
+            this.price = price;
         } else {
             try {
                 throw new ExceptionSuperhero("Значения должны быть заполнены");
@@ -32,6 +35,14 @@ public class Superhero {
                 throw new RuntimeException(e);
             }
         }
+    }
+
+    public long getPrice() {
+        return price;
+    }
+
+    public void setPrice(long price) {
+        this.price = price;
     }
 
     public String getName() {
@@ -96,6 +107,19 @@ public class Superhero {
 
     public void superPower() {
         System.out.println(superPower);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Superhero superhero = (Superhero) o;
+        return getStrengthLevel() == superhero.getStrengthLevel() && Objects.equals(getName(), superhero.getName()) && Objects.equals(getLabel(), superhero.getLabel()) && Objects.equals(getSuperPower(), superhero.getSuperPower());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getName(), getStrengthLevel(), getLabel(), getSuperPower());
     }
 
     @Override

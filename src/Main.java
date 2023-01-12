@@ -1,10 +1,21 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+
 public class Main {
+    private static boolean statusGame = true;
+    private static ArrayList<Account> accountArrayList = new ArrayList<>();
+    private static Account account;
+
     public static void main(String[] args) {
-        //1
-        Superhero one = Factory.createWolverine();
-        Superhero two = Factory.createWolverine();
-        Superhero superhero = Factory.createSuperman();
-        Superhero superhero2 = Factory.createSuperman();
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+//        //1
+//        Superhero one = Factory.createWolverine();
+//        Superhero two = Factory.createWolverine();
+//        Superhero superhero = Factory.createSuperman();
+//        Superhero superhero2 = Factory.createSuperman();
+
         //2
 //        Superhero one = Factory.createAquaman();
 //        Superhero two = Factory.createWolverine();
@@ -34,6 +45,53 @@ public class Main {
 //        Superhero superhero2 = Factory.createWolverine();
 
 //        fight(one, two,superhero,superhero2);
+        while (true){
+            try {
+                System.out.println("Введите одну из комманд для авторизации /enter и /registration для регистрации");
+                String command = bufferedReader.readLine();
+                switch (command){
+                    case "/enter":
+                        System.out.println("Введите логин");
+                        String login = bufferedReader.readLine();
+                        System.out.println("Введите пароль");
+                        String password = bufferedReader.readLine();
+                        for(Account account1 : accountArrayList){
+                            if(account1.getLogin().equals(login) && account1.getPassword().equals(password)){
+                                account = account1;
+                            }
+                        }
+                        if(account == null){
+                            System.out.println("Вы ввели не правильный пароль");
+                        }
+                        break;
+                    case "/registration":
+
+                }
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        while (statusGame){
+            try {
+                String command = bufferedReader.readLine();
+                switch (command){
+                    case "/start":
+                        System.out.println("Выберите своих персонажей для начала битвы");
+                        break;
+                    case "/shop":
+//                        Shop.buyHeroes();
+                    case "/exit":
+                            statusGame = false;
+                            break;
+                    default:
+                        System.out.println("Введите одну из комманд /start, /exit");
+                        break;
+                }
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
     }
 
     public static void fight(Superhero one, Superhero two, Superhero superhero, Superhero superhero2) {
