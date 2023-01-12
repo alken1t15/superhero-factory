@@ -3,27 +3,27 @@ public class Factory {
     final static String LABEL_DC = "DC";
 
     public static Superhero createBatman() {
-        return new Superhero("Бэтмэн", 3, LABEL_DC, "Ааа, я бэтмэн!");
+        return new Superhero("Р‘СЌС‚РјСЌРЅ", 3, LABEL_DC, "ГЂГ Г , Гї ГЎГЅГІГ¬ГЅГ­!");
     }
 
     public static Superhero createAquaman() {
-        return new Superhero("Аквамэн", 5, LABEL_DC, "Ааа, я аквамэн!");
+        return new Superhero("ГЂГЄГўГ Г¬ГЅГ­", 5, LABEL_DC, "ГЂГ Г , Гї Г ГЄГўГ Г¬ГЅГ­!");
     }
 
     public static Superhero createHulk() {
-        return new Superhero("Халк", 6, LABEL_MARVEL, "Ааа, я халк!");
+        return new Superhero("Г•Г Г«ГЄ", 6, LABEL_MARVEL, "ГЂГ Г , Гї ГµГ Г«ГЄ!");
     }
 
     public static Superhero createSpiderMan() {
-        return new Superhero("Человек-паук", 4, LABEL_MARVEL, "Ааа, я человек-паку!");
+        return new Superhero("Г—ГҐГ«Г®ГўГҐГЄ-ГЇГ ГіГЄ", 4, LABEL_MARVEL, "ГЂГ Г , Гї Г·ГҐГ«Г®ГўГҐГЄ-ГЇГ ГЄГі!");
     }
 
     public static Superhero createWolverine() {
-        return new Superhero("Росомаха", 9, LABEL_DC, "Ааа, я росомаха!");
+        return new Superhero("ГђГ®Г±Г®Г¬Г ГµГ ", 9, LABEL_DC, "ГЂГ Г , Гї Г°Г®Г±Г®Г¬Г ГµГ !");
     }
 
     public static Superhero createSuperman() {
-        return new Superhero("Cупермен", 2, LABEL_DC, "Ааа, я супермен!");
+        return new Superhero("CГіГЇГҐГ°Г¬ГҐГ­", 2, LABEL_DC, "ГЂГ Г , Гї Г±ГіГЇГҐГ°Г¬ГҐГ­!");
     }
 
 }
