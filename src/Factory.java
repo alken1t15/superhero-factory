@@ -3,27 +3,27 @@ public class Factory {
     final static String LABEL_DC = "DC";
 
     public static Superhero createBatman() {
-        return new Superhero("Бэтмэн", 3, LABEL_DC, "Ààà, ÿ áýòìýí!");
+        return new Superhero("Бэтмэн", 3, LABEL_DC, "Ааа, я бэтмэн!");
     }
 
     public static Superhero createAquaman() {
-        return new Superhero("Àêâàìýí", 5, LABEL_DC, "Ààà, ÿ àêâàìýí!");
+        return new Superhero("Аквамэн", 5, LABEL_DC, "Ааа, я аквамэн!");
     }
 
     public static Superhero createHulk() {
-        return new Superhero("Õàëê", 6, LABEL_MARVEL, "Ààà, ÿ õàëê!");
+        return new Superhero("Халк", 6, LABEL_MARVEL, "Ааа, я халк!");
     }
 
     public static Superhero createSpiderMan() {
-        return new Superhero("×åëîâåê-ïàóê", 4, LABEL_MARVEL, "Ààà, ÿ ÷åëîâåê-ïàêó!");
+        return new Superhero("Человек-паук", 4, LABEL_MARVEL, "Ааа, я человек-паку!");
     }
 
     public static Superhero createWolverine() {
-        return new Superhero("Ðîñîìàõà", 9, LABEL_DC, "Ààà, ÿ ðîñîìàõà!");
+        return new Superhero("Росомаха", 9, LABEL_DC, "Ааа, я росомаха!");
     }
 
     public static Superhero createSuperman() {
-        return new Superhero("Cóïåðìåí", 2, LABEL_DC, "Ààà, ÿ ñóïåðìåí!");
+        return new Superhero("Cупермен", 2, LABEL_DC, "Ааа, я супермен!");
     }
 
 }
