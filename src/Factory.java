@@ -3,6 +3,7 @@ public class Factory {
     final static String LABEL_DC = "DC";
 
     public static Superhero createBatman() {
+
         return new Superhero("Бэтмэн", 3, LABEL_DC, "Ааа, я бэтмэн!" ,250_000);
     }
 
@@ -23,7 +24,7 @@ public class Factory {
     }
 
     public static Superhero createSuperman() {
-        return new Superhero("Cупермен", 2, LABEL_DC, "Ааа, я супермен!",200_000);
+        return new Superhero("Cупермен", 2, LABEL_DC, "Ааа, я супермен!", 200_000);
     }
 
 }

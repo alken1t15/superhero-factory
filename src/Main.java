@@ -72,26 +72,26 @@ public class Main {
             }
         }
 
-        while (statusGame){
-            try {
-                String command = bufferedReader.readLine();
-                switch (command){
-                    case "/start":
-                        System.out.println("Выберите своих персонажей для начала битвы");
-                        break;
-                    case "/shop":
-//                        Shop.buyHeroes();
-                    case "/exit":
-                            statusGame = false;
-                            break;
-                    default:
-                        System.out.println("Введите одну из комманд /start, /exit");
-                        break;
-                }
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
-        }
+//        while (statusGame){
+//            try {
+//                String command = bufferedReader.readLine();
+//                switch (command){
+//                    case "/start":
+//                        System.out.println("Выберите своих персонажей для начала битвы");
+//                        break;
+//                    case "/shop":
+////                        Shop.buyHeroes();
+//                    case "/exit":
+//                            statusGame = false;
+//                            break;
+//                    default:
+//                        System.out.println("Введите одну из комманд /start, /exit");
+//                        break;
+//                }
+//            } catch (IOException e) {
+//                throw new RuntimeException(e);
+//            }
+//        }
     }
 
     public static void fight(Superhero one, Superhero two, Superhero superhero, Superhero superhero2) {
